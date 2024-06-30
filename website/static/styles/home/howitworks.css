@@ -1,0 +1,40 @@
+.how-it-works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 40rem;
+}
+
+.how-it-works__title{
+    color: var(--color--grey);
+    margin-bottom: 5rem;
+}
+
+.how-it-works__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-it-works__card__number{
+    color: var(--color--pale-orange);
+    margin-top: 3rem;
+}
+
+.how-it-works__card__title{
+    color: var(--color--dark-grey-blue);
+    margin: 1.5rem 0;
+}
+
+.how-it-works__card__text{
+    width: 19.75rem;
+}
+
+.how-it-works__btn-div{
+    margin-top: 5rem;
+}

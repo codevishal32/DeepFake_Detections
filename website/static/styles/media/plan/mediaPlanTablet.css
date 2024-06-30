@@ -1,0 +1,141 @@
+/******* tablets *******/
+
+@media screen and (min-width: 768px) {
+    /******** plan *********/
+
+    .plan__card {
+        background-image: url("../../../images/plan/tablet/image-hero-blackcup.jpg");
+        width: 100%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .plan__title {
+        padding-left: 3rem;
+    }
+
+    .plan__text {
+        padding-left: 3rem;
+        width: 24.5rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    /******** steps *********/
+
+    .steps{
+        flex-direction: row;
+        margin: 0 -2.5rem;
+    }
+
+    .steps__card{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 2rem;
+        height: 30rem;
+    }
+
+    .steps__card__content{
+        position: relative;
+        padding-right: 1rem;
+        height: 100%;
+    }
+
+    .steps__card__content:before{
+        content: "";
+        border: solid var(--color--pale-orange) 1px;
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        width: 100%;
+    }
+
+    .steps__card__content:last-child:before{
+        border: none;
+    }
+
+    .steps__card__content:after{
+        content: "";
+        border: solid var(--color--dark-cyan) 2px;
+        border-radius: 50%;
+        position: absolute;
+        top: -0.9rem;
+        left: 0;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .steps__card__content:last-child{
+        border-top: none;
+    }
+
+    .steps__card__number{
+        margin-top: 5rem;
+    }
+
+    .steps__card__title{
+     width: 13rem;
+    }
+
+    .steps__card__text{
+        width: 13.4rem;
+    }
+
+    /*******accordion*******/
+
+    .choice{
+        align-items: initial;
+        margin: 3rem 0;
+    }
+
+    .accordion__title{
+        width: 100%;
+    }
+
+    .accordion__title h2{
+        width: 100%;
+    }
+
+    .accordion__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .accordion__button{
+        width: 13rem;
+        padding: 1.5rem 1.5rem 5rem 1.5rem;
+    }
+
+    /******* order *******/
+
+    .order__card{
+        width: 100%;
+    }
+
+    .order__card__text{
+        padding: 0 0 3rem 3rem;
+        width: 16rem;
+    }
+
+    .order__card__text{
+        padding: 0 0 3rem 3rem;
+        width: 36rem;
+    }
+
+    /******* modal *******/
+
+    .modal__card{
+        top: 14rem;
+        width: 34rem;
+    }
+
+    .modal__card h2{
+        padding: 3rem 0 3rem 6rem;
+    }
+
+
+}

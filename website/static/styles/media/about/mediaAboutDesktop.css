@@ -1,0 +1,101 @@
+/****** DESKTOP ****/
+
+@media screen and (min-width: 1024px) {
+    /****** DESKTOP | ABOUT SECTION ******/
+    .about__card {
+        background-image: url("../../../images/about/desktop/Alex_Mc_deepfake_technology._neural_networks._c77d4635-85f6-4a95-a77d-b5c9b7dec5cd.webp");
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .about__card__text {
+        font-size: 1rem;
+        width: 27rem;
+    }
+    .about__card__content h2 {
+        font-size: 2.5rem;
+    }
+    /****** DESKTOP | COMMITMENT SECTION ******/
+    .commitment {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .commitment__img {
+        background-image: url("../../../images/about/desktop/Ananya.jpeg");
+        width: 23rem;
+        height: 25rem;
+    }
+    .lastmm__img {
+        background-image: url("../../../images/about/desktop/vishal.jpeg");
+        width: 23rem;
+        height: 25rem;
+    }
+    .commitment__text {
+        width: 31rem;
+    }
+    /****** DESKTOP | QUALITY SECTION ******/
+    .quality {
+        text-align: left;
+    }
+    .quality__card {
+        flex-direction: row-reverse;
+    }
+    .quality__card__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        height: 26rem;
+        gap: 2rem;
+        padding: 0 5rem 1rem 5rem;
+        width: calc(100% - 25rem);
+    }
+    .quality__card__img {
+        background-image: url("../../../images/about/desktop/rahulSharma.jpeg");
+        top: -8rem;
+        width: 25rem;
+        right: 5rem;
+        height: 26rem;
+    }
+    .quality__card__text {
+        font-size: 1.1rem;
+        max-width: 37rem;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    /****** DESKTOP | HEADQUARTERS SECTION ******/
+    .headquarters {
+        align-items: center;
+        width: 85%;
+    }
+    .headquarters__container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        justify-content: space-between;
+    }
+    .headquarters__title {
+        width: 100%;
+    }
+    .headquarters__cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .commitment__img {
+        background-image: url("../../../images/about/desktop/Ananya.jpeg");
+        width: 26rem;
+        height: 30rem;
+    }
+    .commitment__text {
+        font-size: 1rem;
+        width: 33rem;
+    }
+    .headquarters__cards {
+        gap: 10rem;
+    }
+}

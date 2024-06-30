@@ -1,0 +1,164 @@
+a {
+    text-decoration: none;
+}
+
+:root {
+    /****colors****/
+    --color--dark-cyan: rgb(14, 135, 132);
+    --color--dark-grey-blue: rgb(51, 61, 75);
+    --color--dark-blue: rgb(37, 45, 55);
+    --color--pale-orange: rgb(253, 214, 186);
+    --color--light-cream: rgb(254, 252, 247);
+    --color--grey: rgba(153, 153, 154, 0.63);
+    /*****font-family****/
+    --font--fraunces--serif: 'Fraunces', serif;
+    --font--barlow--sans-serif: 'Barlow', sans-serif;
+}
+
+body {
+    font-family: var(--font--barlow--sans-serif);
+    background-color: var(--color--light-cream);
+    padding: 1.5rem;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.form-control:valid {
+    background-color: #0e8784!important;
+    color: white;
+    box-sizing: border-box;
+}
+
+.btn-outline-success:valid {
+    color: white;
+    background-color: #870e0e59;
+}
+
+.button-81 {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-81:hover {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .button-81 {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+    }
+}
+
+
+/******titles && texts*****/
+
+.title_xxl {
+    font-family: var(--font--fraunces--serif);
+    font-size: 150px;
+    line-height: 72px;
+}
+
+.title_xl {
+    font-family: var(--font--fraunces--serif);
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.title_l {
+    font-family: var(--font--fraunces--serif);
+    font-size: 70px;
+    line-height: 48px;
+}
+
+.title_m {
+    font-family: var(--font--fraunces--serif);
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.title_s {
+    font-family: var(--font--fraunces--serif);
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.text_s {
+    font-family: var(--font--barlow--sans-serif);
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.text_m {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/******buttons*****/
+
+.button_green {
+    font-family: var(--font--fraunces--serif);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--color--dark-cyan);
+    color: #FEFCF7;
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button_gray {
+    font-family: var(--font--fraunces--serif);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgba(185, 183, 183, 0.59);
+    color: #FEFCF7;
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button_green:hover {
+    background-color: rgb(101, 210, 207);
+}
+
+.button_disable {
+    color: rgb(226, 222, 219)
+}
+
+
+/*******cards*******/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 2rem;
+    border-radius: .5rem;
+    width: 20rem;
+}

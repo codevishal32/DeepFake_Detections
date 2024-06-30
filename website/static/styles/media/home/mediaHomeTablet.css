@@ -1,0 +1,126 @@
+/******* tablets *******/
+
+@media screen and (min-width: 768px) {
+    /*******cards*******/
+    .card {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: initial;
+        align-items: initial;
+        padding: 1.5rem 4.2rem;
+    }
+    .plan__card {
+        background-image: url("../../../images/64cdea8bf05e28519a237287_futurist-thomas-frey-the-difference-between-human-creativity-and-generative-ai-creativity\ \(1\).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40rem;
+    }
+    .plan__card__text {
+        width: 25rem;
+    }
+    .plan__card a {
+        width: 12.7rem;
+    }
+    /******* collection *******/
+    .collection {
+        position: relative;
+        margin-top: 8rem;
+    }
+    .collection__title {
+        font-size: 7rem;
+        position: absolute;
+        line-height: 5.5rem;
+        background-image: linear-gradient(to bottom, rgb(194, 195, 196) 10%, rgb(245, 245, 245));
+        margin-top: 0;
+        top: -0.6rem;
+        z-index: -1;
+    }
+    .collection__card {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        width: 25%;
+    }
+    /******* about *******/
+    .about__why {
+        background-image: initial;
+        background-color: var(--color--dark-blue);
+        width: 100%;
+        padding-bottom: 27rem;
+    }
+    .about__why__text {
+        width: 60.7rem;
+    }
+    .about__cards {
+        display: flex;
+        position: relative;
+        top: -23rem;
+        width: 85%;
+        margin-bottom: -23rem;
+    }
+    .about__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        text-align: left;
+        padding: 3rem 4rem;
+        gap: 3rem;
+    }
+    .about__card img {
+        width: 8rem;
+        margin-top: 0;
+    }
+    .about__card__titel {
+        margin-top: 0;
+    }
+    .about__card__text {
+        margin: 1rem 0;
+        width: 23rem;
+    }
+    /******* how it works *******/
+    .how-it-works {
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .how-it-works__container {
+        display: flex;
+        align-items: start;
+        width: 100%;
+    }
+    .how-it-works__card {
+        align-items: flex-start;
+        border-top: solid var(--color--pale-orange) 0.2rem;
+        position: relative;
+        padding-right: 1.7rem;
+    }
+    .how-it-works__card:after {
+        content: '';
+        border: solid var(--color--dark-cyan) 2px;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        background-color: var(--color--light-cream);
+        border-radius: 50%;
+        top: -1.2rem;
+    }
+    .how-it-works__card:last-child {
+        border-top: none;
+    }
+    .how-it-works__card__title {
+        color: var(--color--dark-grey-blue);
+        margin: 1.5rem 0;
+        width: 10rem;
+    }
+    .how-it-works__card__text {
+        font-size: 0.90rem;
+        letter-spacing: 1px;
+        width: 14rem;
+        height: 12rem;
+    }
+    .how-it-works__btn-div {
+        width: 85%;
+        margin-top: 5rem;
+    }
+}

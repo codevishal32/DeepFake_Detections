@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  ******************* CSS ********************-->
+
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/global.css">
+    <link rel="stylesheet" href="../static/styles/header.css">
+    <link rel="stylesheet" href="../static/styles/home/plan.css">
+    <link rel="stylesheet" href="../static/styles/home/collection.css">
+    <link rel="stylesheet" href="../static/styles/home/about.css">
+    <link rel="stylesheet" href="../static/styles/home/howitworks.css">
+    <link rel="stylesheet" href="../static/styles/footer.css">
+    <link rel="stylesheet" href="../static/styles/media/home/mediaHomeTablet.css">
+    <link rel="stylesheet" href="../static/styles/media/mediaHeaderFooter.css">
+    <link rel="stylesheet" href="../static/styles/media/home/mediaHomeDesktop.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/global.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home/plan.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home/collection.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home/about.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home/howitworks.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/media/home/mediaHomeTablet.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/media/mediaHeaderFooter.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/media/home/mediaHomeDesktop.css') }}"> -->
+
+    <!--  ****************** scripts ********************-->
+
+    <!-- <script src="../static/js/script.js" defer></script> -->
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    <!--  **************** Fonts and logo *****************-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Deepfake Detection</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__image">
+            <img src="../static/images/shared/desktop/logo.png" alt="" title="">
+        </h1>
+        <nav class="header__nav">
+            <button id="header__nav__button">
+    <img id="header__nav__img" src="../static/images/shared/mobile/icon-hamburger.svg" alt="">
+    </button>
+            <ul id="navBar" class="header__nav__ul">
+                <li class="title_s"><a href='/'>Home</a></li>
+                <li class="title_s"><a href='{{ url_for('about') }}'>About us</a></li>
+                <li class="title_s"><a onclick="howItWork()">Mannual</a></li>
+                <li class="title_s"><a href="https://www.police.rajasthan.gov.in/Old/hackathon/index.html">Challenge hoster</a></li>
+                <button class="button-81" role="button"><a onclick="window.location.href='{{ url_for('login') }}'">Login</a></button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="plan">
+            <div class="plan__card card">
+                <h2 class="title_l plan__card__title">DeepFake Detection</h2>
+                <div class="blurred-background">
+                    <div class="text-container">
+                        <p class="plan__card__text text_m">In a world where deepfakes threaten to erode trust and authenticity, we offer an unwavering shield of protection. Our cutting-edge solutions deliver unparalleled accuracy in identity verification, empowering you to confidently distinguish
+                            genuine videos, images and audios from even the most deceptive forgeries.</p>
+                    </div>
+                </div>
+                <a href="/login" class="button_green" >Start Detection</a>
+            </div>
+        </section>
+
+        <section class="collection">
+            <h3 class="collection__title title_l">Feature's</h3>
+
+            <div class="collection__card">
+                <img src="../static/images/home/desktop/image-removebg-preview.png" alt="">
+                <div class="collection__card__content">
+                    <h4 class="collection__card__title title_s">Fast & Accurate</h4>
+                    <p class="collection__card__text text_m">Achieve swift and reliable identification of deepfake content in real-time with our precisely accurate and lightning-fast deepfake detection system.</p>
+                </div>
+            </div>
+
+            <div class="collection__card">
+                <img class="collection__card__img" src="../static/images/home/desktop/image-removebg-preview (1).png" alt="">
+                <div class="collection__card__content">
+                    <h4 class="collection__card__title title_s">Customizable</h4>
+                    <p class="collection__card__text text_m">Seamlessly customize and integrate our deepfake detection solution into your existing identity verification system.</p>
+                </div>
+            </div>
+
+            <div class="collection__card toCenter">
+                <img src="../static/images/home/desktop/image-removebg-preview (4).png" alt="">
+                <div class="collection__card__content">
+                    <h4 class="collection__card__title title_s">Comprehensive</h4>
+                        <p class="collection__card__text text_m">Our advanced AI algorithms are crafted to detect a broad spectrum of deepfake technologies, covering face swaps, lip-syncing, and manipulation of audios, videos, and images.</p>
+                </div>
+            </div>
+
+            <div class="collection__card">
+                <img class="imgSize" src="../static/images/home/desktop/image-removebg-preview (7).png" alt="">
+                <div class="collection__card__content">
+                    <h4 class="collection__card__title title_s">Explainable</h4>
+                    <p class="collection__card__text text_m">Our deepfake detection model examines audios, videos and images for signs of manipulation, providing you with clear details to take appropriate action.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about__why">
+                <h2 class="about__why__title title_m">Why choose us?</h2>
+                <p class="about__why__text text_m">Because You Deserve Truth. Our commitment to accuracy, advanced technology, and seamless integration sets us apart in delivering trustworthy solutions for your needs.</p>
+            </div>
+            <div class="about__cards">
+                    <div class="about__card"> 
+                        <img src="../static/images/home/desktop/image-removebg-preview (12).png" alt="">
+                        <div class="about__card__content">
+                            <h3 class="about__card__titel title_s">Image Deepfake Detection</h3>
+                            <p class="about__card__text text_m">Upload a .png, .jpg or .jpeg image file to check if it's a deepfake</p>
+                            <a href="/login" class="button_green" >Start Detection</a>
+                        </div>
+                    </div>
+                <div class="about__card">
+                    <img src="../static/images/home/desktop/image-removebg-preview (11).png" alt="">
+                    <div class="about__card__content">
+                        <h3 class="about__card__titel title_s">Video Deepfake Detection</h3>
+                        <p class="about__card__text text_m">Upload a .mp4 or .webm video file to check if it's a deepfake</p>
+                        <a href="/login" class="button_green" >Start Detection</a>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <img src="../static/images/home/desktop/image-removebg-preview (9).png" alt="">
+                    <div class="about__card__content">
+                        <h3 class="about__card__titel title_s">Audio Deepfake Detection.</h3>
+                        <p class="about__card__text text_m">Upload a .wav audio file to check if it's a deepfake</p>
+                        <a href="/login" class="button_green" >Start Detection</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="howITworks">
+            <h2 class="how-it-works__title title_l">How it works ?</h2>
+            <div class="how-it-works__container">
+                <div class="how-it-works__card">
+                    <h3 class="how-it-works__card__number title_xl">01</h3>
+                    <h4 class="how-it-works__card__title title_s">Choose Mode</h4>
+                    <p class="how-it-works__card__text text_m">Select Image, Audio, or Video mode based on your file type.</p>
+                </div>
+                <div class="how-it-works__card">
+                    <h3 class="how-it-works__card__number title_xl">02</h3>
+                    <h4 class="how-it-works__card__title title_s">Upload File</h4>
+                    <p class="how-it-works__card__text text_m">Upload file for authenticity verification. For optimal results, choose a file without special effects or modifications.</p>
+                </div>
+                <div class="how-it-works__card">
+                    <h3 class="how-it-works__card__number title_xl">03</h3>
+                    <h4 class="how-it-works__card__title title_s">Submit and View Result</h4>
+                    <p class="how-it-works__card__text text_m">Submit your file for verification and view the results in real-time.
+                    </p>
+                </div>
+                <!-- <div class="how-it-works__btn-div">
+                <a href="/" class="how-it-works__button button_green">DeepFake Detection</a>
+            </div> -->
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__card">
+            <img class="footer__img" src="../static/images/shared/desktop/logo.png" alt="">
+            <nav>
+                <ul class="footer__nav ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About us</a></li>
+                    <li><a href="https://www.police.rajasthan.gov.in/Old/hackathon/index.html">Challenge hoster</a></li>
+                </ul>
+            </nav>
+            <div class="footer__media">
+                <a href="#"><img src="../static/images/shared/desktop/icon-facebook.svg" alt="facebook logo"></a>
+                <a href="#"><img src="../static/images/shared/desktop/icon-twitter.svg" alt="twitter logo"></a>
+                <a href="#"><img src="../static/images/shared/desktop/icon-instagram.svg" alt="instagram logo"></a>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        function showDialogue() {
+            var dialogue = document.getElementById('about');
+
+            dialogue.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function howItWork() {
+            var dialogue = document.getElementById('howITworks');
+
+            dialogue.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+        }
+    </script>
+</body>
+
+</html>

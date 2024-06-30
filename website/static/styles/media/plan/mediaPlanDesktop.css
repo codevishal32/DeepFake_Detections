@@ -1,0 +1,123 @@
+/******* PLAN | DESKTOP *******/
+
+@media screen and (min-width: 1024px) {
+
+    /****** DESKTOP | PLAN SECTION ******/
+
+    .plan__card {
+        background-image: url("../../../images/plan/desktop/image-hero-blackcup.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 24rem;
+        margin-top: 4rem;
+    }
+
+    .plan__title{
+        font-size: 4.5rem;
+    }
+
+    .plan__text{
+        font-size: 1.1rem;
+        width: 26rem;
+    }
+
+    /****** DESKTOP | STEPS SECTION ******/
+
+    .steps{
+        margin: 0;
+    }
+
+    .steps__card{
+        padding-left: 4rem;
+    }
+
+    .steps__card__content{
+        padding-right: 5rem;
+    }
+
+    .steps__card__content:last-child{
+        padding-right: 2rem;
+    }
+
+    .steps__card__text{
+        width: 15rem;
+    }
+
+    /****** DESKTOP | ACCORDION SECTION ******/
+
+    .steps__container{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .steps__option{
+        display: flex;
+    }
+
+    .steps__option__number{
+        margin-right: 1rem;
+        color: var(--color--grey);
+        transition: 0.3s;
+    }
+
+    .steps__option li{
+        padding: 1.75rem 0;
+        color: var(--color--grey);
+        border-bottom: solid var(--color--grey) 1px;
+        transition: 0.3s;
+    }
+
+    .choice__container{
+        flex-direction: column;
+    }
+
+    .accordion__title h2{
+        font-size: 2.3rem;
+        margin-right: 2rem;
+    }
+
+    .accordion__button{
+        width: 12.5rem;
+        padding: 1.5rem 1.5rem 4rem 1.5rem;
+    }
+
+    /****** DESKTOP | ORDER SECTION ******/
+
+    .order{
+
+        align-items: flex-end;
+
+    }
+
+    .order__card{
+        align-items: flex-end;
+        width: 41rem;
+    }
+
+    .modal__card__check{
+        width: 26rem;
+    }
+
+    .modal__card__text{
+        font-size: 1.1rem;
+        width: 26rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1240px) {
+    .steps__card__text{
+        width: 17rem;
+    }
+
+    .steps__container{
+        gap: 10rem;
+    }
+
+    .order__card{
+        align-items: flex-end;
+        width: 51rem;
+    }
+}

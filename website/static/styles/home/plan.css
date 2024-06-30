@@ -1,0 +1,24 @@
+.plan {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan__card {
+    background-image: url("../../images/shared/mobile/960x0.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+}
+
+.plan__card__title {
+    color: #f2eff1eb;
+    width: 16.875rem;
+}
+
+.plan__card__text {
+    color: rgb(246, 246, 246);
+    font-size: 14px;
+    width: 20.812rem;
+}

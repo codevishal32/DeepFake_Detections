@@ -1,0 +1,24 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__card {
+    background-image: url("../../images/about/mobile/Alex_Mc_deepfake_technology._neural_networks._c77d4635-85f6-4a95-a77d-b5c9b7dec5cd.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 26.5rem;
+    color: var(--color--light-cream);
+    margin: 2.5rem 0;
+}
+
+.about__card__text {
+    width: 17rem;
+    color: rgba(254, 252, 247, 0.7);
+}
+
+.about__card__content h2 {
+    margin-bottom: 2rem;
+}

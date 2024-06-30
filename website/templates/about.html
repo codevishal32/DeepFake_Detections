@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  ******************* CSS ********************-->
+
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/global.css">
+    <link rel="stylesheet" href="../static/styles/header.css">
+    <link rel="stylesheet" href="../static/styles/footer.css">
+    <link rel="stylesheet" href="../static/styles/about/about.css">
+    <link rel="stylesheet" href="../static/styles/about/commitment.css">
+    <link rel="stylesheet" href="../static/styles/about/quality.css">
+    <link rel="stylesheet" href="../static/styles/about/headquarters.css">
+    <link rel="stylesheet" href="../static/styles/media/about/mediaAboutTablet.css">
+    <link rel="stylesheet" href="../static/styles/media/about/mediaAboutDesktop.css">
+    <link rel="stylesheet" href="../static/styles/media/mediaHeaderFooter.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/global.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/about/about.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/about/commitment.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/about/quality.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/about/headquarters.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/media/about/mediaAboutTablet.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/media/about/mediaAboutDesktop.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/media/mediaHeaderFooter.css') }}"> -->
+    <!--  ****************** scripts ********************-->
+
+    <!-- <script src="../static/js/script.js" defer></script> -->
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+
+
+    <!--  **************** Fonts and logo *****************-->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,900&display=swap" rel="stylesheet">
+
+    <title>DeepFake Detection</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__image">
+            <img src="../static/images/shared/desktop/logo.png" alt="virtal logo" title="virtual logo">
+        </h1>
+        <nav class="header__nav">
+            <button id="header__nav__button">
+      <img id="header__nav__img" src="../static/images/shared/mobile/icon-hamburger.svg" alt="main menu | hamburger icon">
+    </button>
+            <ul id="navBar" class="header__nav__ul">
+                <li class="title_s"><a href='/'>Home</a></li>
+                <li class="title_s"><a href='{{ url_for('about') }}'>About us</a></li>
+                <li class="title_s"><a href="https://www.police.rajasthan.gov.in/Old/hackathon/index.html">Comptition hoster</a></li>
+                <button class="button-81" role="button"><a onclick="window.location.href='{{ url_for('login') }}'">Login</a></button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about__card card" role="img" aria-label="top view photo of a rustic wooden table with a part of a white teapot on the right of the image with a white cup filled with cappuccino sprinkled with cocoa powder on top of both">
+                <div class="about__card__content">
+                    <h2 class="title_m">About Us</h2>
+                    <p class="about__card__text text_m"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="commitment">
+            <div class="commitment__img card" role="img" aria-label="Ananya"></div>
+            <div class="commitment__content">
+                <h2 class="commitment__title title_m">Ananya Gupta</h2>
+                <p class="commitment__text text_m">
+                    I am Ananya Gupta, a pre-final year B.Tech. CSE student at Indira Gandhi Delhi Technical University for Women, Delhi. I am a quick learner who is passionate about Artificial Intelligence. My interest lies in Machine Learning, Deep Learning and Computer Vision.
+                </p>
+        </section>
+
+        <section class="quality">
+            <div class="quality__card card">
+                <div class="quality__card__img"></div>
+                <div class="quality__card__content">
+                    <h2 class="quality__card__title title_m">Rahul Sharma</h2>
+                    <p class="quality__card__text text_m">I am Rahul Sharma, a final year B.Tech. CSAI student at Indian Institute of Information Technology, Lucknow. I am interested in Machine learning, Deep learning and Backend Development.</p>
+                </div>
+            </div>
+        </section>
+        <section class="commitment">
+            <div class="lastmm__img card" role="img" aria-label="vishal"></div>
+            <div class="commitment__content">
+                <h2 class="commitment__title title_m">Vishal</h2>
+                <p class="commitment__text text_m">
+                    I am Vishal, currently a 4th-year student in the Department of Information Technology at IIEST Shibpur. I love creating new projects, solving problems, and learning new technologies. My interests lie in Full-stack Development and Machine Learning.
+                </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__card">
+            <img class="footer__img" src="../static/images/shared/desktop/logo.png" alt="logo of cofferoasters">
+            <nav>
+                <ul class="footer__nav ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About us</a></li>
+                    <li><a href="https://www.police.rajasthan.gov.in/Old/hackathon/index.html">Comptition hoster</a></li>
+                </ul>
+            </nav>
+            <div class="footer__media">
+                <a href="#"><img src="../static/images/shared/desktop/icon-facebook.svg" alt="facebook logo"></a>
+                <a href="#"><img src="../static/images/shared/desktop/icon-twitter.svg" alt="twitter logo"></a>
+                <a href="#"><img src="../static/images/shared/desktop/icon-instagram.svg" alt="instagram logo"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function goBack() {
+            window.location.href = "/";
+        }
+    </script>
+</body>
+
+</html>

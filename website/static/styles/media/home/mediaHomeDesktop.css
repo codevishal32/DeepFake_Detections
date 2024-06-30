@@ -1,0 +1,89 @@
+/*********  DESKTOP  **********/
+
+@media screen and (min-width: 1024px) {
+    /********* SECTION PLAN CARD  **********/
+    .plan__card {
+        width: 100%;
+    }
+    .plan__card__title {
+        font-size: 5rem;
+        line-height: 5rem;
+        width: 30rem;
+    }
+    /* .toCenter {
+        align-items: inherit;
+    } */
+    .imgSize {
+        width: 20px;
+        height: inherit;
+    }
+    .plan__card__text {
+        font-size: 25px;
+        width: 35.812rem;
+    }
+    /********* SECTION COLLECTION  **********/
+    .collection__title {
+        font-size: 9rem;
+        line-height: 10rem;
+        top: -4rem;
+    }
+    .collection {
+        flex-direction: row;
+    }
+    .collection__card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .collection__card__text {
+        width: 15rem;
+    }
+    /******* SECTION ABOUT *******/
+    .about {
+        /*align-items: initial;*/
+    }
+    .about__why {
+        padding-bottom: 15rem;
+    }
+    .about__cards {
+        top: -10rem;
+        flex-direction: row;
+        margin-bottom: -5rem;
+    }
+    .about__card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 0;
+        width: 33%;
+    }
+    .about__card__text {
+        font-size: 19px;
+        width: 20rem;
+    }
+    .about__card__titel {
+        font-size: 1.3rem;
+    }
+    /******* how it works *******/
+    .how-it-works {
+        align-items: center;
+    }
+    .how-it-works__container {
+        width: 85%;
+        margin-left: -13rem;
+    }
+    .how-it-works__title {
+        width: 95%;
+    }
+    .how-it-works__btn-div {
+        width: 85%;
+        margin: 5rem 0;
+    }
+}
+
+@media screen and (min-width: 1289px) {
+    .collection__title {
+        font-size: 12.5rem;
+        line-height: 10rem;
+        top: -4rem;
+    }
+}

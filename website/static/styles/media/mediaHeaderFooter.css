@@ -1,0 +1,56 @@
+/******* tablets *******/
+
+@media screen and (min-width: 768px) {
+    /*************header************/
+    body {
+        padding: 2.5rem;
+    }
+    .header {
+        width: 100%;
+    }
+    .header img {
+        height: 4.6rem;
+    }
+    .header__nav img {
+        display: none;
+    }
+    .header__nav {
+        display: flex;
+    }
+    .header__nav__ul {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        position: initial;
+        background-image: none;
+        width: initial;
+        height: initial;
+        padding-top: 0;
+        top: 0;
+        left: 0;
+        gap: 1.5rem;
+    }
+    .header__nav__ul a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        color: var(--color--grey);
+        transition: 0.3s;
+    }
+    /******* footer *******/
+    .footer__card {
+        width: 100%;
+        padding: 3rem 0;
+    }
+    .footer__nav {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 3rem;
+    }
+}

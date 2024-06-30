@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color--dark-blue);
+    width: 21.875rem;
+    margin-bottom: 2rem;
+    margin-top: 5px;
+}
+
+.footer__img {
+    margin: 2rem;
+}
+
+.footer__nav {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.footer__nav li {
+    margin-bottom: 1rem;
+}
+
+.footer__nav a {
+    color: var(--color--grey);
+    transition: 0.3s;
+}
+
+.footer__nav a:hover {
+    color: var(--color--light-cream);
+}
+
+.footer__media {
+    display: flex;
+    gap: 1.3rem;
+    margin: 2rem 0;
+}
+
+.footer__media img:hover {
+    filter: brightness(0) saturate(100%) invert(92%) sepia(17%) saturate(1751%) hue-rotate(301deg) brightness(118%) contrast(98%);
+}

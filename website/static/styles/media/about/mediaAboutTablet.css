@@ -1,0 +1,69 @@
+@media screen and (min-width: 768px) {
+    .about__card {
+        background-image: url("../../../images/about/tablet/Alex_Mc_deepfake_technology._neural_networks._c77d4635-85f6-4a95-a77d-b5c9b7dec5cd.webp");
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .about__card h2 {
+        padding-left: 3rem;
+    }
+    .about__card__text {
+        padding-left: 3rem;
+        width: 25rem;
+    }
+    /****** commitment ****/
+    .commitment {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .commitment__content {
+        text-align: left;
+    }
+    .commitment__img {
+        background-image: url("../../../images/about/tablet/Ananya.jpeg");
+        width: 18rem;
+        height: 30rem;
+        margin: 0;
+    }
+    .commitment__text {
+        width: 21rem;
+    }
+    /****** quality ****/
+    .quality__card__img {
+        background-image: url("../../../images/about/tablet/rahulSharma.jpeg");
+        top: -10rem;
+        border-radius: 0.4rem;
+        width: 85%;
+        height: 20rem;
+        margin-bottom: -8rem;
+    }
+    .quality__card {
+        width: 100%;
+    }
+    .quality__card__text {
+        width: 33.4rem;
+    }
+    /****** headquarters ****/
+    .headquarters {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .headquarters__cards {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .headquarters__card__title {
+        font-size: 1.54rem;
+        margin-bottom: 1.6rem;
+    }
+    .lastmm__img {
+        background-image: url("../../../images/about/tablet/vishal.jpeg");
+        width: 18rem;
+        height: 30rem;
+        margin: 0;
+    }
+}

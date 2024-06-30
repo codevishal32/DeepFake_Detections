@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Video's check</title>
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/global.css">
+    <link rel="stylesheet" href="../static/styles/header.css">
+    <link rel="stylesheet" href="../static/styles/home/plan.css">
+    <link rel="stylesheet" href="../static/styles/home/collection.css">
+    <link rel="stylesheet" href="../static/styles/home/about.css">
+    <link rel="stylesheet" href="../static/styles/home/howitworks.css">
+    <link rel="stylesheet" href="../static/styles/footer.css">
+    <link rel="stylesheet" href="../static/styles/media/home/mediaHomeTablet.css">
+    <link rel="stylesheet" href="../static/styles/media/mediaHeaderFooter.css">
+    <link rel="stylesheet" href="../static/styles/media/home/mediaHomeDesktop.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            /* Light gray background */
+        }
+        
+        .custom-border {
+            border: 2px solid #ced4da;
+            /* Medium gray border */
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .container-fluid {
+            margin-top: 50px;
+        }
+        
+        .custom-bg {
+            background-color: #e9ecef;
+            /* Lighter gray background */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__image">
+            <img src="../static/images/shared/desktop/logo.png" alt="" title="">
+        </h1>
+        <nav class="header__nav">
+            <button id="header__nav__button">
+      <img id="header__nav__img" src="../static/images/shared/mobile/icon-hamburger.svg" alt="">
+    </button>
+            <ul id="navBar" class="header__nav__ul">
+                <li class="title_s"><a href="/">Home</a></li>
+                <li class="title_s"><a href="{{ url_for('about') }}">About us</a></li>
+                <li class="title_s"><a href="https://www.police.rajasthan.gov.in/Old/hackathon/index.html">Challenge hoster</a></li>
+                <button class="button-89" role="button"><a href="{{ url_for('dashboard') }}">Dashboard</a></button>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <!-- Left half: Video Player and Dialogue -->
+            <div class="col-lg-6 custom-border custom-bg">
+                <h2 class="text-center">Input Video:</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- Replace 'your_video_url' with the actual URL of your video -->
+                    <!-- Show the video from the local storage-->
+                    <video class="embed-responsive-item" controls>
+                        <source src="{{ input_file_url }}" type="video/mp4">
+                    <!--<iframe class="embed-responsive-item" src={{input_file_url}} allowfullscreen></iframe>-->
+                </div>
+            </div>
+
+            <!-- Right half: Predict Result and Predicted Dialogue -->
+            <div class="col-lg-6 custom-border custom-bg">
+                <h4 class="text-center">Audio Analysis Result:</h4>
+                <p id="predictResult" class="text-center">{{ audio_status }}</p>
+                <hr>
+                <h4 class="text-center">Lip Reading Result: {{ status }}</h4>
+                <h4 class="text-center">Prediction Accuracy: {{ status_percentage }}</h4>
+                <!--<p id="predictResult" class="text-center">{{ status }}</p>
+                <p id="predictResult" class="text-center">{{ status_percentage }}</p> -->
+                <!--<div class="progress">
+                    <div id="predictionProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow={{ status_percentage }} aria-valuemin="0" aria-valuemax="100"></div>
+                </div>-->
+                <hr>
+                <h4 class="text-center mt-4">Frame-By-Frame Analysis Video:</h4>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- Replace 'your_video_url' with the actual URL of your video -->
+                    <!-- Show the video from the local storage-->
+                    <video class="embed-responsive-item" controls>
+                        <source src="{{ output_file_url }}" type="video/mp4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__card">
+            <img class="footer__img" src="../static/images/shared/desktop/logo.png" alt="">
+            <nav>
+                <ul class="footer__nav ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About us</a></li>
+                    <li><a href="https://www.police.rajasthan.gov.in/Old/hackathon/index.html">Challenge hoster</a></li>
+                </ul>
+            </nav>
+            <div class="footer__media">
+                <a href="#"><img src="../static/images/shared/desktop/icon-facebook.svg" alt="facebook logo"></a>
+                <a href="#"><img src="../static/images/shared/desktop/icon-twitter.svg" alt="twitter logo"></a>
+                <a href="#"><img src="../static/images/shared/desktop/icon-instagram.svg" alt="instagram logo"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript for prediction -->
+    <script>
+        function predict() {
+            // Your prediction logic here
+            // Get the entered dialogue from the input field
+            var dialogue = document.getElementById('dialogueInput').value;
+
+            // Perform prediction and update the result
+            var prediction = predictResult(dialogue);
+
+            // Update the Predict Result paragraph
+            document.getElementById('predictResult').innerText = `Prediction: ${prediction}%`;
+
+            // Update the progress bar
+            var progressBar = document.getElementById('predictionProgressBar');
+            progressBar.style.width = prediction + '%';
+            progressBar.setAttribute('aria-valuenow', prediction);
+
+            // Update the Predicted Dialogue paragraph
+            document.getElementById('predictedDialogue').innerText = dialogue;
+        }
+
+        // Replace this function with your actual prediction logic
+        function predictResult(dialogue) {
+            // Dummy logic, replace with your own prediction logic
+            return Math.floor(Math.random() * 101); // Random number between 0 and 100
+        }
+    </script>
+</body>
+
+</html>
