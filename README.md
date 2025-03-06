@@ -11,7 +11,10 @@ This application is a comprehensive platform for detecting and analyzing media a
 5. **User Authentication**: Secure sign-in and sign-up features with Firebase Authentication.
 6. **Dashboard**: View analytics and results of media analysis.
 7. **Real-time Processing**: Fast and efficient processing of media files.
-
+## Presentation Link:
+[link](https://www.canva.com/design/DAF52rj8WGE/JF4gNQKhn6FKAIzNgHR7aw/view?utm_content=DAF52rj8WGE&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
+## Video
+[link](https://www.youtube.com/watch?v=WN6Y-F983l8)
 ## Installation
 
 1. **Clone the Repository**
